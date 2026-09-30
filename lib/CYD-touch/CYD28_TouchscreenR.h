@@ -49,11 +49,20 @@
   #define CYD28_TouchR_CS   33
 
 #endif
-// CALIBRAION VALUES
+// CALIBRATION VALUES
+// Board targets may override these with PlatformIO build flags.
+#ifndef CYD28_TouchR_CAL_XMIN
 #define CYD28_TouchR_CAL_XMIN 185
+#endif
+#ifndef CYD28_TouchR_CAL_XMAX
 #define CYD28_TouchR_CAL_XMAX 3700
+#endif
+#ifndef CYD28_TouchR_CAL_YMIN
 #define CYD28_TouchR_CAL_YMIN 280
+#endif
+#ifndef CYD28_TouchR_CAL_YMAX
 #define CYD28_TouchR_CAL_YMAX 3850
+#endif
 
 
 class CYD28_TS_Point {
